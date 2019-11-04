@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('./Vanilla Node/node_modules/fs');
 
 const requestHandler = (req, res) => {
     const url = req.url;
@@ -27,6 +27,7 @@ const requestHandler = (req, res) => {
             });
         })
     }
+    
     res.setHeader('Content-Type', 'text/html');
     res.write('<html>');
     res.write('<head><title>My Server</title></head>');
